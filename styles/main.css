@@ -1,0 +1,646 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #B47663;
+    --secondary-color: #F5EADA;
+    --accent-color: #B47663;
+    --text-color: #B47663;
+    --text-light: #B47663;
+    --white: #F5EADA;
+    --border-color: #e8e8e8;
+    --button-bg: #B47663;
+    --button-hover: #9d5f4d;
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    background-color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary, .btn-whatsapp, .btn-book {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--text-color);
+    color: var(--white);
+    border-color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--text-color);
+    color: var(--white);
+    border-color: var(--text-color);
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: var(--white);
+}
+
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+    transform: translateY(-2px);
+}
+
+.btn-book {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-book:hover {
+    background-color: #c5a028;
+}
+
+/* Hero Section - Removed */
+
+/* Featured Section */
+.featured-section, .featured-treatment {
+    padding: 100px 20px;
+    background-color: var(--white);
+}
+
+.featured-section h2, .featured-treatment h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.featured-text {
+    max-width: 850px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+.featured-section .container, .featured-treatment .container {
+    text-align: center;
+}
+
+/* Treatments Preview */
+.treatments-preview {
+    padding: 100px 20px;
+    background-color: var(--white);
+}
+
+.treatments-preview h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 3rem;
+}
+
+.treatment-card {
+    background: var(--white);
+    padding: 40px 35px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.treatment-card:hover {
+    border-color: var(--accent-color);
+}
+
+.treatment-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.treatment-card p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.view-all {
+    text-align: center;
+}
+
+/* Medical Treatments */
+.medical-treatments {
+    padding: 100px 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.medical-treatments h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.medical-treatments p {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    color: var(--text-light);
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.treatment-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.badge {
+    padding: 18px 40px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    font-weight: 300;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.badge:hover {
+    border-color: var(--accent-color);
+}
+
+/* Community Section */
+.community-section {
+    padding: 100px 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.community-section h2 {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.community-section p {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 100px 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.newsletter-section p {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--text-light);
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 250px;
+    padding: 14px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: 0.95rem;
+    background: var(--white);
+    font-weight: 300;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Page Header */
+.page-header {
+    background: var(--white);
+    padding: 150px 20px 80px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px 80px;
+    background-color: var(--secondary-color);
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.about-profile {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.about-title-image {
+    margin-bottom: 1px;
+    width: 100%;
+    line-height: 0;
+}
+
+.about-title-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    vertical-align: bottom;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.profile-description {
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.profile-description p {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: var(--text-color);
+    font-weight: 300;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
+
+.profile-description p:first-child {
+    margin-top: 1px;
+}
+
+.profile-description p:last-child {
+    margin-bottom: 0;
+}
+
+.favorite-treatment {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+    border-top: 1px solid var(--border-color);
+}
+
+.favorite-treatment h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.about-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.about-content address {
+    font-style: normal;
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+.about-content address a {
+    color: var(--accent-color);
+}
+
+/* Treatments Section */
+.treatments-section {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.treatments-section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Book Section */
+.book-section {
+    padding: 100px 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.book-section h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+.book-description {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    font-size: 1.05rem;
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.btn-whatsapp {
+    font-size: 1rem;
+    padding: 16px 40px;
+    letter-spacing: 1.5px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: var(--primary-color);
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: 0.95rem;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    background: var(--white);
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero {
+        padding: 120px 20px 60px;
+    }
+    
+    .treatment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        min-width: 100%;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 30px 20px;
+    }
+    
+    .about-profile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-title-image {
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    
+    .about-title-image img {
+        margin: 0 auto;
+    }
+}
+

@@ -1,0 +1,256 @@
+/* Treatments Page Specific Styles */
+.treatment-categories {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.treatment-category {
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.treatment-category:last-of-type {
+    border-bottom: none;
+}
+
+.category-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.category-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+
+.treatment-detail-card {
+    background-color: var(--secondary-color);
+    padding: 35px 30px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease;
+}
+
+.treatment-detail-card:hover {
+    border-color: var(--accent-color);
+}
+
+.treatment-detail-card h2,
+.treatment-detail-card h3,
+.treatment-detail-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.treatment-detail-card p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.9;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.treatment-detail-card:last-child {
+    margin-bottom: 0;
+}
+
+.treatment-section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: var(--secondary-color);
+}
+
+.treatment-section h2,
+.treatment-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.treatment-section p {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.treatment-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.treatment-option {
+    background-color: var(--secondary-color);
+    padding: 25px 20px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.treatment-option:hover {
+    border-color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+.treatment-option h3,
+.treatment-option h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.treatment-option p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.treatment-variants {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.variant {
+    background-color: var(--secondary-color);
+    padding: 15px 25px;
+    border: 1px solid var(--border-color);
+    font-weight: 300;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.area-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.area-option {
+    background-color: var(--secondary-color);
+    padding: 35px 30px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.area-option:hover {
+    border-color: var(--accent-color);
+}
+
+.area-option h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.area-option p {
+    color: var(--text-color);
+    line-height: 1.9;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.area-option .note {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-color);
+    margin-top: 0.8rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.filler-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.filler-option {
+    background-color: var(--secondary-color);
+    padding: 30px 25px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.filler-option:hover {
+    border-color: var(--accent-color);
+}
+
+.filler-option h3,
+.filler-option h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.filler-option p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .treatment-detail-card {
+        padding: 25px;
+    }
+    
+    .treatment-options-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .area-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .filler-options {
+        grid-template-columns: 1fr;
+    }
+}
+
