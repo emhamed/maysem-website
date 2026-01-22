@@ -1,8 +1,212 @@
 [
     {
         "rating": 5,
-        "text": "Add your review text here",
-        "author": "Reviewer Name",
-        "date": "2024"
+        "text": "Loved the experience, very professional. I highly recommend her 100%.",
+        "author": "Amhimmid Ahfaaf",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I've been attending the clinic for Lemon Bottle injections with Dr Maysem, and I've seen a huge difference already. From start to finish, the treatment has been exceptional — pre-treatment, during, and aftercare have all been handled with great care.",
+        "author": "Sanjida Akther",
+        "date": "a month ago"
+    },
+    {
+        "rating": 5,
+        "text": "I've visited Maysem twice now and I honestly couldn't be happier with my results. She is incredibly knowledgeable, gentle and genuinely cares about your skin and your comfort.",
+        "author": "Marcia Lombardi",
+        "date": "2 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had such a fantastic experience with Maysem at Aesthetic Pharmacist. From the moment I arrived, she made me feel so comfortable and at ease with her warm and professional approach. Maysem is incredibly knowledgeable and took the time to explain everything.",
+        "author": "Fatimaezzahra Bouraouda",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I recently had a microneedling with exosomes treatment on my face with Maysem and honestly I was a bit scared at first but it went amazing!",
+        "author": "Noomane Mrf",
+        "date": "2 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I highly recommend Maysem's services based on her vast experience and honest approach. The treatments that I've had done by Maysem were performed with deft and skill. I appreciate her honesty when it came to what treatments are best for my skin.",
+        "author": "Baneen Salem",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Maysem is so lovely! She did my micro needling treatment today and even bought me a latte, how cute! The procedure was painless, as she applied numbing cream to my face. I also had red light therapy, I'm super excited to see the final results!",
+        "author": "Natalie Good",
+        "date": "2 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had lip and chin fillers, botox, salmon DNA skin booster with Maysem, and she made the whole experience so comfortable. She's gentle, sweet, and really professional, explaining everything and answering all my questions.",
+        "author": "marilena_p",
+        "date": "5 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Incredibly smooth service, exceptionally kind, honest and considerate practitioner and nurse. This is someone who will speak to you sincerely and not guide or support you with treatments or aesthetics if she truly doesn't see your need for it. Highly recommend!!",
+        "author": "Zara Sadia",
+        "date": "2 weeks ago"
+    },
+    {
+        "rating": 5,
+        "text": "Maisam made me feel incredibly comfortable throughout the whole process and talked me through everything. I had polynucleotides under my eyes and my cheeks, and chin/jaw augmentation to try and hide my double chin. Maisam understood my skin concerns perfectly.",
+        "author": "Kate Loader",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had the absolute pleasure of being treated by Maysem and can't recommend her enough! I came in for a polynucleotide under eye treatment, skin booster, and microneedling, and she made the whole experience exceptional. She explained everything clearly and made me feel at ease.",
+        "author": "ATHMAN RAGAD",
+        "date": "5 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had a 5 star experience with Dr. Maysem. I had Botox injections in my trapezius muscles which have been tense and painful for a long time and were giving me strong headaches. She made me feel comfortable and the results have been amazing.",
+        "author": "V U",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I recently had Profhilo and Microneedling treatments with Maysam and I couldn't be happier with the experience. She was very professional, gentle, and attentive throughout the whole process, making me feel completely comfortable. The results exceeded my expectations.",
+        "author": "Rafaella Erotokritou",
+        "date": "4 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "So sweet and kind!! Made me feel comfortable and safe, I genuinely would not trust anyone w my face but dr maysem is very good at what she does and I was so happy with the results!!",
+        "author": "Lily",
+        "date": "2 weeks ago"
+    },
+    {
+        "rating": 5,
+        "text": "I recently visited this wonderful clinic for a skin booster treatment, and I couldn't be happier with the results! The treatment was excellent and professional.",
+        "author": "Farah F",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had an amazing experience with Dr. Maysem. She really took the time to listen to my skin concerns and explained every step of the treatment. Highly recommend! Friendly and professional.",
+        "author": "Rafla Saadaoui",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I went for the first course of 3 microneedling sessions and it's been a pleasure. The treatment was excellent and I'm very happy with the results.",
+        "author": "Kevin",
+        "date": "2 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Dr. Maysem is incredible! I had Botox, cheek fillers, and under-eye (salmon) filler, and the results are so natural. She has an amazing eye for detail and made me feel completely comfortable and was painless. The results are exactly what I wanted. Highly recommend her!!",
+        "author": "mahfaf shibanyothman",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I recently had a session with Maysem, and I couldn't be happier with my experience! Initially, I was quite nervous about the idea of getting injectables, particularly with something as unique as salmon sperm combined with Botox. But Maysem made me feel completely at ease.",
+        "author": "Gallal Muflahi",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had a wonderful experience with Maysem and had polynucleotides booster on my face. It all was very painfree and I had minimal downtime and the next morning was back to normal. My skin looks amazing and my redness is gone.",
+        "author": "Gabriela Adores",
+        "date": "5 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had an amazing experience with Dr. Maysem for my Botox treatment! She was incredibly professional, explained everything clearly, and made me feel completely at ease. The results were subtle yet effective — just what I wanted. I feel so much more confident now. Highly recommend her to anyone considering Botox!",
+        "author": "Tabassum Bashir",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Dr. Maysem is amazing! I did lip fillers, botox and lemon bottle and the results are great!",
+        "author": "Nia Iliev",
+        "date": "a month ago"
+    },
+    {
+        "rating": 5,
+        "text": "The service provided was excellent. Maysem was very careful and gentle with the procedures, I was very happy with the results, and I definitely plan to come back, already have my next appointments booked. Highly recommend!",
+        "author": "Thea Frangou",
+        "date": "4 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "The staff are very welcoming and the treatment was excellent. The practitioner was nice explaining every process and took the up most care throughout every step of the procedure. Really good service and atmosphere.",
+        "author": "Adz TNS",
+        "date": "2 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Maysem made me feel at ease and counselled me throughout the treatments. I am looking forward to further results. Maysem is very responsive to messages and always happy to help. Thank you!",
+        "author": "Karan Trivedi",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Maysem gave me an amazing experience. I've finally met someone I can truly trust with my skin—she's such a great specialist. Thank you!",
+        "author": "Beg Olgaç",
+        "date": "4 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "One of the most amazing skin treatments I ever had, skin booster gave an amazing glow and hydration to my skin. Thank you so much! Highly recommend this incredible beautician!",
+        "author": "Audrone Gedrimaite",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "She was recommended to me by a friend, and honestly no regrets, I didn't feel any pain even though I have very high pain tolerance, I'd definitely be a loyal customer to her and would 100% recommend to a friend.",
+        "author": "Helena Ioannidou",
+        "date": "5 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Thank you so much for giving the best glow for this summer, I am so glad that I chose you to have this incredible treatment, I can't stop looking at myself in the mirror!",
+        "author": "areej shabaa",
+        "date": "6 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "It's a good experience. I got eyes skin booster, and the effect was good.",
+        "author": "王一荣",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "Was happy to visit the clinic, really like the procedure!",
+        "author": "Таня А",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I love the results of my tear trough filler. Thank you",
+        "author": "Beau Paley",
+        "date": "a day ago"
+    },
+    {
+        "rating": 5,
+        "text": "Maisem is so lovely and has kindly advised me much during my process of polynucleotides. She listens to all my other skincare concerns whilst being realistic about what I need/don't need. She is great and I always look forward to my appointments with her!",
+        "author": "Sadia A",
+        "date": "3 days ago"
+    },
+    {
+        "rating": 5,
+        "text": "I did microneedling with Dr. Maisam, and thank God her work was perfect and professional. It won't be the first time, God willing. The clinic's reception is also wonderful, and they are careful with time. Thank you very much!",
+        "author": "Saad Aldossary",
+        "date": "3 months ago"
+    },
+    {
+        "rating": 5,
+        "text": "I had an excellent experience at Maysem London. I had wrinkle removal surgery here last month, and I was extremely satisfied with the results.",
+        "author": "Shawn Huang",
+        "date": "a day ago"
     }
 ]
