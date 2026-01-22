@@ -34,7 +34,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* Typography */
@@ -349,7 +349,7 @@ a {
 
 /* About Section */
 .about-section {
-    padding: 100px 20px 80px;
+    padding: 100px 0 80px;
     background-color: var(--secondary-color);
 }
 
@@ -475,7 +475,7 @@ a {
 
 /* Treatments Section */
 .treatments-section {
-    padding: 80px 20px;
+    padding: 80px 0;
     background-color: var(--white);
 }
 
@@ -489,7 +489,7 @@ a {
 
 /* Reviews Section */
 .reviews-section {
-    padding: 80px 20px;
+    padding: 80px 0;
     background-color: var(--secondary-color);
 }
 
@@ -593,7 +593,7 @@ a {
 
 /* Book Section */
 .book-section {
-    padding: 100px 20px;
+    padding: 100px 0;
     background-color: var(--white);
     text-align: center;
 }
@@ -757,12 +757,12 @@ a {
     
     /* Container padding */
     .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     
     /* About Section Mobile Improvements */
     .about-section {
-        padding: 80px 15px 60px;
+        padding: 80px 0 60px;
     }
     
     .about-section h2 {
@@ -796,7 +796,7 @@ a {
     
     /* Treatments Section Mobile */
     .treatments-section {
-        padding: 60px 15px;
+        padding: 60px 0;
     }
     
     .treatments-section h2 {
@@ -885,7 +885,7 @@ a {
     
     /* Reviews Section Mobile */
     .reviews-section {
-        padding: 60px 15px;
+        padding: 60px 0;
     }
     
     .reviews-section h2 {
@@ -894,10 +894,10 @@ a {
     }
     
     .reviews-scroll-container {
-        margin-left: -15px;
-        margin-right: -15px;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-bottom: 30px;
     }
     
@@ -918,7 +918,7 @@ a {
     
     /* Book Section Mobile */
     .book-section {
-        padding: 60px 15px;
+        padding: 60px 0;
     }
     
     .book-section h2 {
