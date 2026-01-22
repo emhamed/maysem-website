@@ -104,7 +104,7 @@ function createModal() {
             <button class="modal-close" aria-label="Close">&times;</button>
             <h3 class="modal-title"></h3>
             <p class="modal-description"></p>
-            <a href="https://wa.me/447502200543" class="btn-whatsapp modal-cta" target="_blank">Book This Treatment</a>
+            <a href="https://wa.me/447502200543" class="btn-whatsapp modal-cta" target="_blank">Book Consultation or Treatment</a>
         </div>
     `;
     document.body.appendChild(modal);
