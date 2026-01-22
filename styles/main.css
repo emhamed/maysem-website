@@ -483,6 +483,70 @@ a {
     text-transform: uppercase;
 }
 
+/* Reviews Section */
+.reviews-section {
+    padding: 80px 20px;
+    background-color: var(--secondary-color);
+}
+
+.reviews-section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.review-card {
+    background-color: var(--white);
+    padding: 40px 35px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.review-stars {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.review-author {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.reviews-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
 /* Book Section */
 .book-section {
     padding: 100px 20px;
@@ -613,6 +677,10 @@ a {
     }
     
     .treatment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-grid {
         grid-template-columns: 1fr;
     }
     
