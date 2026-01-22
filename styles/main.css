@@ -27,6 +27,8 @@ body {
     font-weight: 300;
     letter-spacing: 0.3px;
     background-color: var(--secondary-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -82,6 +84,8 @@ a {
     cursor: pointer;
     border: none;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .btn-primary {
@@ -499,11 +503,34 @@ a {
     color: var(--primary-color);
 }
 
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.reviews-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--secondary-color);
     margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.reviews-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-scroll-container::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+.reviews-scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.reviews-scroll {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+    min-width: min-content;
 }
 
 .review-card {
@@ -511,6 +538,9 @@ a {
     padding: 40px 35px;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
+    min-width: 350px;
+    max-width: 350px;
+    flex-shrink: 0;
 }
 
 .review-card:hover {
@@ -518,11 +548,25 @@ a {
     transform: translateY(-5px);
 }
 
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
 .review-stars {
     font-size: 1.2rem;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
     letter-spacing: 3px;
+}
+
+.review-rating {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 400;
 }
 
 .review-text {
@@ -535,11 +579,11 @@ a {
 }
 
 .review-author {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-color);
-    font-weight: 300;
-    opacity: 0.8;
+    font-weight: 400;
     margin: 0;
+    text-align: right;
 }
 
 .reviews-cta {
@@ -709,6 +753,229 @@ a {
     
     .about-title-image img {
         margin: 0 auto;
+    }
+    
+    /* Container padding */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* About Section Mobile Improvements */
+    .about-section {
+        padding: 80px 15px 60px;
+    }
+    
+    .about-section h2 {
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .about-profile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .about-title-image {
+        margin-bottom: 20px;
+    }
+    
+    .about-title-image img {
+        width: 100%;
+    }
+    
+    .profile-description p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    
+    /* Treatments Section Mobile */
+    .treatments-section {
+        padding: 60px 15px;
+    }
+    
+    .treatments-section h2 {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+    
+    .treatment-category {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .category-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .category-description {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+    
+    .treatment-detail-card {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .treatment-detail-card h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .treatment-detail-card p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    
+    .treatment-options-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 25px 0;
+    }
+    
+    .treatment-option {
+        padding: 20px 15px;
+    }
+    
+    .treatment-option h4 {
+        font-size: 0.9rem;
+    }
+    
+    .area-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .area-option {
+        padding: 25px 20px;
+    }
+    
+    .area-option h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .filler-options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .filler-option {
+        padding: 25px 20px;
+    }
+    
+    .treatment-variants {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .variant {
+        padding: 12px 20px;
+        min-width: 100%;
+    }
+    
+    /* Reviews Section Mobile */
+    .reviews-section {
+        padding: 60px 15px;
+    }
+    
+    .reviews-section h2 {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+    
+    .reviews-scroll-container {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .reviews-scroll {
+        gap: 20px;
+    }
+    
+    .review-card {
+        padding: 30px 25px;
+        min-width: 280px;
+        max-width: 280px;
+    }
+    
+    .review-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    
+    /* Book Section Mobile */
+    .book-section {
+        padding: 60px 15px;
+    }
+    
+    .book-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .book-description {
+        font-size: 0.95rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .btn-whatsapp,
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 25px;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    
+    .btn-book {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    
+    /* Footer Mobile */
+    .footer {
+        padding: 40px 15px 15px;
+    }
+    
+    .footer-container {
+        display: block;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-section h4 {
+        font-size: 0.95rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 

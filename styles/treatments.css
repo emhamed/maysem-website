@@ -237,20 +237,27 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .treatment-detail-card {
-        padding: 25px;
+    .treatment-categories {
+        padding: 60px 15px;
     }
     
-    .treatment-options-grid {
-        grid-template-columns: 1fr;
+    .treatment-section {
+        padding: 40px 15px;
+        margin-bottom: 30px;
     }
     
-    .area-options {
-        grid-template-columns: 1fr;
+    .treatment-section h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
     
-    .filler-options {
-        grid-template-columns: 1fr;
+    .treatment-badges {
+        gap: 10px;
+    }
+    
+    .badge {
+        padding: 12px 20px;
+        font-size: 0.8rem;
     }
 }
 
