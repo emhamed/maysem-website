@@ -18,7 +18,7 @@
     align-items: center;
     height: 80px;
     position: relative;
-    gap: 30px;
+    gap: 40px;
 }
 
 
@@ -88,8 +88,9 @@
 /* Social Icons */
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
+    margin-left: 20px;
 }
 
 .social-icon {
@@ -98,8 +99,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
 }
 
 .social-icon:hover {
@@ -126,7 +128,7 @@
         min-height: 80px;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 20px;
     }
     
     .hamburger {
@@ -170,12 +172,14 @@
     }
     
     .social-icons {
-        gap: 12px;
+        gap: 15px;
+        margin-left: 0;
+        margin-top: 5px;
     }
     
     .social-icon {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
     }
     
     .social-icon svg {

@@ -32,7 +32,7 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: var(--white);
     font-weight: 300;
     font-size: 0.95rem;
@@ -59,7 +59,7 @@
     .footer-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
+        gap: 50px;
     }
 }
 
@@ -74,7 +74,7 @@
     }
     
     .footer-section {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
     
     .footer-section:last-child {
