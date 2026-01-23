@@ -349,7 +349,7 @@ a {
 
 /* About Section */
 .about-section {
-    padding: 120px 0 80px;
+    padding: 140px 0 80px;
     background-color: var(--secondary-color);
 }
 
@@ -766,12 +766,12 @@ a {
     
     /* About Section Mobile Improvements */
     .about-section {
-        padding: 100px 0 60px;
+        padding: 130px 0 60px;
     }
     
     .about-title-image {
         margin-bottom: 30px;
-        margin-top: 0;
+        margin-top: 20px;
         padding: 0 10px;
     }
     

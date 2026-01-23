@@ -95,7 +95,7 @@
     .nav-container {
         padding: 0 10px;
         height: auto;
-        min-height: 70px;
+        min-height: 80px;
         flex-wrap: wrap;
         justify-content: center;
     }
