@@ -54,12 +54,35 @@
     opacity: 0.8;
 }
 
+/* Map Container */
+.footer-map {
+    grid-column: span 1;
+}
+
+.map-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* Responsive Footer */
 @media (min-width: 768px) {
     .footer-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 50px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-map {
+        grid-column: span 1;
     }
 }
 
@@ -89,6 +112,11 @@
     .footer-section ul li {
         font-size: 0.9rem;
         margin-bottom: 0.8rem;
+    }
+    
+    .map-container {
+        height: 180px;
+        margin-top: 15px;
     }
 }
 
