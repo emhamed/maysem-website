@@ -349,7 +349,7 @@ a {
 
 /* About Section */
 .about-section {
-    padding: 100px 0 80px;
+    padding: 120px 0 80px;
     background-color: var(--secondary-color);
 }
 
@@ -388,10 +388,12 @@ a {
 }
 
 .about-title-image {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
     width: 100%;
     line-height: 0;
     text-align: center;
+    padding: 0 15px;
 }
 
 .about-title-image img {
@@ -764,7 +766,18 @@ a {
     
     /* About Section Mobile Improvements */
     .about-section {
-        padding: 80px 0 60px;
+        padding: 100px 0 60px;
+    }
+    
+    .about-title-image {
+        margin-bottom: 30px;
+        margin-top: 0;
+        padding: 0 10px;
+    }
+    
+    .about-title-image img {
+        width: 100%;
+        max-width: 100%;
     }
     
     .about-section h2 {
