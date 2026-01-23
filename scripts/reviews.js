@@ -1,11 +1,30 @@
 // Load and display reviews from JSON file
 async function loadReviews() {
     try {
-        const response = await fetch('data/reviews.json');
+        // Try multiple path variations to ensure it works
+        let response;
+        try {
+            response = await fetch('./data/reviews.json');
+        } catch (e) {
+            response = await fetch('data/reviews.json');
+        }
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const reviews = await response.json();
         
         const reviewsScroll = document.querySelector('.reviews-scroll');
-        if (!reviewsScroll) return;
+        if (!reviewsScroll) {
+            console.error('Reviews scroll container not found');
+            return;
+        }
+        
+        if (!reviews || reviews.length === 0) {
+            reviewsScroll.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--text-color);">No reviews available at this time.</p>';
+            return;
+        }
         
         reviewsScroll.innerHTML = '';
         
@@ -25,10 +44,10 @@ async function loadReviews() {
         });
     } catch (error) {
         console.error('Error loading reviews:', error);
-        // If reviews.json doesn't exist or has errors, show message
+        // Show error message with more details
         const reviewsScroll = document.querySelector('.reviews-scroll');
         if (reviewsScroll) {
-            reviewsScroll.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--text-color);">Reviews will be displayed here. Please add reviews to data/reviews.json</p>';
+            reviewsScroll.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--text-color);">Unable to load reviews. Please check the console for details.</p>';
         }
     }
 }
