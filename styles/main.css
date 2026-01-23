@@ -388,17 +388,19 @@ a {
 }
 
 .about-title-image {
-    margin-bottom: 1px;
+    margin-bottom: 30px;
     width: 100%;
     line-height: 0;
+    text-align: center;
 }
 
 .about-title-image img {
     width: 100%;
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
     vertical-align: bottom;
 }
 
@@ -770,6 +772,15 @@ a {
         font-size: 1.5rem;
     }
     
+    .about-title-image {
+        margin-bottom: 30px;
+    }
+    
+    .about-title-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+    
     .about-profile {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -779,14 +790,6 @@ a {
     .about-image {
         width: 100%;
         max-width: 100%;
-    }
-    
-    .about-title-image {
-        margin-bottom: 20px;
-    }
-    
-    .about-title-image img {
-        width: 100%;
     }
     
     .profile-description p {
