@@ -130,7 +130,7 @@ function startAutoScroll() {
     
     if (!reviewsScrollContainer || !reviewsScroll) return;
     
-    let scrollSpeed = 1; // pixels per frame
+    let scrollSpeed = 0.3; // pixels per frame - slower speed
     let isScrolling = true;
     let animationFrameId;
     
