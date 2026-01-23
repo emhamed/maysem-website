@@ -515,6 +515,12 @@ a {
     scrollbar-color: var(--primary-color) var(--secondary-color);
     margin-bottom: 40px;
     padding-bottom: 20px;
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.reviews-scroll-container:active {
+    cursor: grabbing;
 }
 
 .reviews-scroll-container::-webkit-scrollbar {

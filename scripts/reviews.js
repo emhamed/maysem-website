@@ -123,5 +123,60 @@ function loadReviews() {
     });
 }
 
+// Auto-scroll reviews horizontally
+function startAutoScroll() {
+    const reviewsScrollContainer = document.querySelector('.reviews-scroll-container');
+    const reviewsScroll = document.querySelector('.reviews-scroll');
+    
+    if (!reviewsScrollContainer || !reviewsScroll) return;
+    
+    let scrollSpeed = 1; // pixels per frame
+    let isScrolling = true;
+    let animationFrameId;
+    
+    function scroll() {
+        if (isScrolling) {
+            const maxScroll = reviewsScroll.scrollWidth - reviewsScrollContainer.clientWidth;
+            const currentScroll = reviewsScrollContainer.scrollLeft;
+            
+            if (currentScroll >= maxScroll) {
+                // Reset to beginning when reaching the end
+                reviewsScrollContainer.scrollLeft = 0;
+            } else {
+                reviewsScrollContainer.scrollLeft += scrollSpeed;
+            }
+        }
+        animationFrameId = requestAnimationFrame(scroll);
+    }
+    
+    // Pause scrolling on hover
+    reviewsScrollContainer.addEventListener('mouseenter', () => {
+        isScrolling = false;
+    });
+    
+    reviewsScrollContainer.addEventListener('mouseleave', () => {
+        isScrolling = true;
+    });
+    
+    // Pause scrolling on touch (mobile)
+    reviewsScrollContainer.addEventListener('touchstart', () => {
+        isScrolling = false;
+    });
+    
+    reviewsScrollContainer.addEventListener('touchend', () => {
+        // Resume after a delay
+        setTimeout(() => {
+            isScrolling = true;
+        }, 2000);
+    });
+    
+    // Start scrolling
+    scroll();
+}
+
 // Load reviews when page loads
-document.addEventListener('DOMContentLoaded', loadReviews);
+document.addEventListener('DOMContentLoaded', () => {
+    loadReviews();
+    // Start auto-scroll after reviews are loaded
+    setTimeout(startAutoScroll, 500);
+});
