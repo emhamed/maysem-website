@@ -39,6 +39,9 @@ const treatmentsData = {
         },
         "BUNNY LINES": {
             "description": "Treatment for bunny lines (wrinkles on the sides of the nose) using anti-wrinkle injections to smooth these fine lines and create a more refined appearance."
+        },
+        "NON-SURGICAL NECK LIFT": {
+            "description": "A comprehensive non-surgical treatment combining various techniques to lift, tighten, and rejuvenate the neck area. This treatment addresses sagging skin, horizontal lines, and loss of definition for a more youthful neck appearance."
         }
     },
     "dermal-fillers": {
@@ -57,10 +60,22 @@ const treatmentsData = {
         "NONSURGICAL RHINOPLASTY": {
             "description": "Non-surgical nose reshaping using dermal fillers to smooth bumps, lift the tip, or straighten the bridge. A non-invasive alternative to surgical rhinoplasty with immediate results and minimal downtime."
         },
+        "TEMPLE FILLER": {
+            "description": "Temple filler treatment restores volume to the temple area, addressing hollowing and creating a more youthful, balanced facial contour. This treatment can help lift the brow area and improve overall facial harmony."
+        },
+        "NASOLABIAL LINES": {
+            "description": "Treatment for nasolabial folds (lines running from the nose to the corners of the mouth) using dermal fillers to restore volume and smooth these prominent facial lines for a more youthful appearance."
+        },
+        "MARIONETTE LINES": {
+            "description": "Treatment for marionette lines (lines extending downward from the corners of the mouth) using dermal fillers to restore volume and lift the lower face, creating a more positive and youthful expression."
+        },
+        "ORAL LINES": {
+            "description": "Treatment for oral lines (fine lines around the mouth area) using dermal fillers to smooth and soften these lines, creating a more refined and youthful appearance around the mouth."
+        },
         "DISSOLVING FILLER": {
             "description": "Treatment to dissolve unwanted or misplaced dermal fillers using hyaluronidase. This procedure can correct asymmetry, overfilling, or complications, restoring natural facial contours."
         },
-        "BELOTERO NECK REJUVENATION": {
+        "BELOTERO NECK REJUVENATION/NECK LINES TREATMENT": {
             "description": "Advanced Belotero treatment to soften visible neck lines and enhance skin elasticity. This treatment addresses horizontal neck lines (necklace lines) for a smoother, more youthful neck appearance."
         }
     },
@@ -94,11 +109,11 @@ const treatmentsData = {
         "MICRONEEDLING WITH EXOSOMES": {
             "description": "Microneedling with exosomes is an advanced skin rejuvenation treatment that combines micro-injuries with exosome therapy. This powerful combination supports collagen production, improves skin texture, reduces fine lines and scars, and enhances overall skin vitality and radiance."
         },
+        "MICRONEEDLING WITH EXOSOMES FOR HAIR": {
+            "description": "Microneedling with exosomes for hair is a specialized treatment that combines microneedling with exosome therapy to stimulate hair growth, improve scalp health, and enhance hair density. This treatment promotes follicle regeneration and strengthens existing hair."
+        },
         "CHEMICAL PEELS": {
             "description": "Chemical peels use acid solutions to exfoliate and rejuvenate the skin. They improve skin texture, reduce fine lines, fade hyperpigmentation, and treat acne. Available in various strengths to suit different skin types and concerns."
-        },
-        "NON-SURGICAL NECK LIFT": {
-            "description": "A comprehensive non-surgical treatment combining various techniques to lift, tighten, and rejuvenate the neck area. This treatment addresses sagging skin, horizontal lines, and loss of definition for a more youthful neck appearance."
         }
     },
     "fat-dissolving": {
