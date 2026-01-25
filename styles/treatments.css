@@ -35,23 +35,37 @@
 .treatments-slider {
     position: relative;
     width: 100%;
-    max-width: 1100px;
-    margin: 0 auto 50px;
+    max-width: 900px;
+    margin: 40px auto 60px;
     aspect-ratio: 4 / 5;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    background-color: var(--secondary-color);
 }
 
 .treatment-slide {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition: opacity 0.6s ease;
+    transition: opacity 1.2s ease-in-out;
+    z-index: 1;
 }
 
 .treatment-slide.is-active {
     opacity: 1;
+    z-index: 2;
+}
+
+.treatment-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .treatment-slide img {
@@ -390,8 +404,10 @@
     }
     
     .treatments-slider {
-        margin-bottom: 35px;
+        max-width: 100%;
+        margin: 30px auto 40px;
         aspect-ratio: 3 / 4;
+        border-radius: 12px;
     }
     
     .treatment-section {

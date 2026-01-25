@@ -259,17 +259,25 @@ function startTreatmentsSlideshow() {
     if (!slides.length) return;
 
     let currentIndex = slides.findIndex(slide => slide.classList.contains('is-active'));
-    if (currentIndex === -1) currentIndex = 0;
+    if (currentIndex === -1) {
+        currentIndex = 0;
+        slides[0].classList.add('is-active');
+    }
 
     const showSlide = (index) => {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('is-active', i === index);
-        });
+        // Remove active class from all slides first
+        slides.forEach(slide => slide.classList.remove('is-active'));
+        
+        // Add active class to current slide after a brief delay for smooth transition
+        setTimeout(() => {
+            slides[index].classList.add('is-active');
+        }, 50);
     };
 
+    // Change slide every 5 seconds (5000ms) to allow fade transition to complete
     setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
-    }, 4000);
+    }, 5000);
 }
 
