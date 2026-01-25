@@ -121,15 +121,14 @@
         top: 0;
         width: 100%;
         border-bottom: 1px solid var(--border-color);
-        background-color: var(--secondary-color);
     }
     
     .nav-container {
-        padding: 12px 15px;
+        padding: 10px 15px;
         height: auto;
         min-height: auto;
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
     }
     
     .hamburger {
@@ -144,7 +143,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 8px;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -157,8 +156,8 @@
     }
     
     .nav-menu li a {
-        font-size: 0.65rem;
-        padding: 5px 8px;
+        font-size: 0.7rem;
+        padding: 6px 10px;
         display: block;
         white-space: nowrap;
     }
@@ -168,15 +167,14 @@
     }
     
     .btn-book {
-        padding: 5px 10px;
-        font-size: 0.6rem;
+        padding: 6px 12px;
+        font-size: 0.65rem;
         margin: 0;
-        letter-spacing: 0.5px;
-        line-height: 1.2;
+        letter-spacing: 1px;
     }
     
     .social-icons {
-        gap: 10px;
+        gap: 12px;
         margin-left: 0;
         margin-top: 0;
         order: 2;
@@ -184,50 +182,13 @@
     }
     
     .social-icon {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
     
     .social-icon svg {
-        width: 14px;
-        height: 14px;
-    }
-}
-
-/* iPhone specific fixes */
-@media (max-width: 480px) {
-    .nav-container {
-        padding: 10px 12px;
-        gap: 10px;
-    }
-    
-    .nav-menu {
-        gap: 5px;
-    }
-    
-    .nav-menu li a {
-        font-size: 0.6rem;
-        padding: 4px 7px;
-    }
-    
-    .btn-book {
-        font-size: 0.55rem;
-        padding: 4px 8px;
-    }
-    
-    .about-section {
-        padding: 160px 0 40px;
-    }
-    
-    .about-title-image {
-        margin-top: 30px;
-        margin-bottom: 25px;
-        padding: 0 10px;
-    }
-    
-    .about-profile {
-        gap: 25px;
-        padding: 0 10px;
+        width: 16px;
+        height: 16px;
     }
 }
 
