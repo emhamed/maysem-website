@@ -103,6 +103,12 @@ const treatmentsData = {
         },
         "SKIN BOOSTER LIP HYDRATION": {
             "description": "Specialized skin booster treatment for lip hydration and enhancement. This treatment improves lip texture, adds subtle volume, and provides long-lasting hydration for soft, plump, and healthy-looking lips."
+        },
+        "NCTF": {
+            "description": "NCTF (New Cellular Treatment Factor) is an advanced mesotherapy treatment containing a complex blend of vitamins, amino acids, coenzymes, and hyaluronic acid. This treatment deeply hydrates the skin, improves elasticity, reduces fine lines, and promotes overall skin rejuvenation for a radiant, youthful complexion."
+        },
+        "JALUPRO": {
+            "description": "Jalupro is an innovative skin rejuvenation treatment containing amino acids, peptides, and hyaluronic acid. This mesotherapy solution stimulates collagen and elastin production, improves skin texture and firmness, and provides deep hydration for a more youthful and revitalized appearance."
         }
     },
     "advanced-treatments": {
