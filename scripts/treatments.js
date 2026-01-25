@@ -249,5 +249,27 @@ function closeModal() {
 }
 
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initializeTreatmentClicks);
+document.addEventListener('DOMContentLoaded', () => {
+    initializeTreatmentClicks();
+    startTreatmentsSlideshow();
+});
+
+function startTreatmentsSlideshow() {
+    const slides = Array.from(document.querySelectorAll('.treatment-slide'));
+    if (!slides.length) return;
+
+    let currentIndex = slides.findIndex(slide => slide.classList.contains('is-active'));
+    if (currentIndex === -1) currentIndex = 0;
+
+    const showSlide = (index) => {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('is-active', i === index);
+        });
+    };
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }, 4000);
+}
 
