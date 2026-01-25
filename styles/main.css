@@ -789,59 +789,38 @@ a {
         padding: 30px 20px;
     }
     
-    .about-profile {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .about-title-image {
-        text-align: center;
-        margin-bottom: 1px;
-    }
-    
-    .about-title-image img {
-        margin: 0 auto;
-    }
-    
     /* Container padding */
     .container {
-        padding: 0 10px;
+        padding: 0 15px;
     }
     
     /* About Section Mobile Improvements */
     .about-section {
-        padding: 130px 0 60px;
-    }
-    
-    .about-title-image {
-        margin-bottom: 30px;
-        margin-top: 20px;
-        padding: 0 10px;
-    }
-    
-    .about-title-image img {
-        width: 100%;
-        max-width: 100%;
+        padding: 120px 0 50px;
     }
     
     .about-section h2 {
         margin-bottom: 2.5rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .about-title-image {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
     }
     
     .about-title-image img {
         width: 100%;
         max-width: 100%;
+        margin: 0 auto;
     }
     
     .about-profile {
         grid-template-columns: 1fr;
-        gap: 30px;
-        margin-bottom: 40px;
+        gap: 25px;
+        margin-bottom: 30px;
     }
     
     .about-image {
@@ -852,6 +831,7 @@ a {
     .profile-description p {
         font-size: 0.95rem;
         line-height: 1.8;
+        margin-bottom: 1.2rem;
     }
     
     /* Treatments Section Mobile */
