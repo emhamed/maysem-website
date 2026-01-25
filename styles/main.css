@@ -412,6 +412,16 @@ a {
     vertical-align: bottom;
 }
 
+.inspiring-quote {
+    text-align: center;
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin: 0 0 30px;
+    font-weight: 300;
+}
+
 .about-content {
     display: flex;
     flex-direction: column;
