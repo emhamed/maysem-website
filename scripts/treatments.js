@@ -1,22 +1,22 @@
 // Treatment Descriptions Handler
 const treatmentsData = {
     "anti-wrinkle": {
-        "ONE AREA": {
+        "ANTI-WRINKLE – ONE AREA": {
             "description": "One-area injectable treatment targets a specific facial muscle group to reduce dynamic lines and improve skin smoothness with controlled, natural results."
         },
-        "TWO AREAS": {
+        "ANTI-WRINKLE – TWO AREAS": {
             "description": "A focused injectable procedure treating two designated facial areas to temporarily relax targeted muscles and soften expression lines. Common combinations include crows feet, forehead lines, and frown lines."
         },
-        "THREE AREAS": {
+        "ANTI-WRINKLE – THREE AREAS": {
             "description": "A comprehensive anti-wrinkle treatment targeting three facial areas simultaneously for a more complete rejuvenation. This treatment addresses multiple areas of concern to create a harmonious, natural-looking result."
         },
-        "JAWLINE SLIMMING (masseter)": {
+        "JAWLINE SLIMMING (MASSETER)": {
             "description": "Jawline slimming treatment uses anti-wrinkle injections to relax the masseter muscles, creating a more refined and contoured jawline. Ideal for those seeking a softer, more feminine facial shape."
         },
         "NOSE SLIMMING WITH BOTOX": {
             "description": "Non-surgical nose slimming using anti-wrinkle injections to relax specific nasal muscles, creating the appearance of a narrower, more refined nose without surgery."
         },
-        "HYPERHIDROSIS (excessive sweating)": {
+        "HYPERHIDROSIS (EXCESSIVE SWEATING)": {
             "description": "Treatment for excessive sweating (hyperhidrosis) using anti-wrinkle injections to block nerve signals that trigger sweat production. Effective for underarms, palms, and feet."
         },
         "DIMPLE CHIN": {
@@ -45,14 +45,23 @@ const treatmentsData = {
         }
     },
     "dermal-fillers": {
-        "LIPS": {
-            "description": "Lip augmentation using dermal fillers to enhance volume, shape, and definition. Available in 0.5ml for subtle enhancement or 1ml for more noticeable volume. Creates natural-looking, plump lips with improved symmetry."
+        "LIPS – 0.5 ml": {
+            "description": "Lip augmentation using 0.5ml of dermal filler for subtle enhancement, shape, and definition. Creates natural-looking, plump lips with improved symmetry while maintaining a subtle, refined appearance."
         },
-        "CHEEK AUGMENTATION": {
-            "description": "Cheek enhancement using dermal fillers to restore volume, lift sagging skin, and create more defined cheekbones. Available in 1ml or 2ml depending on desired results. Provides a natural, youthful lift to the mid-face."
+        "LIPS – 1 ml": {
+            "description": "Lip augmentation using 1ml of dermal filler for more noticeable volume, shape, and definition. Creates natural-looking, plump lips with improved symmetry and enhanced fullness."
         },
-        "JAWLINE": {
-            "description": "Jawline contouring and definition using dermal fillers to create a sharper, more defined jawline. Available in 1ml or 2ml. Enhances facial structure and creates a more sculpted appearance."
+        "CHEEK AUGMENTATION – 1 ml": {
+            "description": "Cheek enhancement using 1ml of dermal fillers to restore volume, lift sagging skin, and create more defined cheekbones. Provides a natural, youthful lift to the mid-face."
+        },
+        "CHEEK AUGMENTATION – 2 ml": {
+            "description": "Cheek enhancement using 2ml of dermal fillers to restore significant volume, lift sagging skin, and create more defined cheekbones. Provides a more dramatic, natural, youthful lift to the mid-face."
+        },
+        "JAWLINE – 1 ml": {
+            "description": "Jawline contouring and definition using 1ml of dermal fillers to create a sharper, more defined jawline. Enhances facial structure and creates a more sculpted appearance."
+        },
+        "JAWLINE – 2 ml": {
+            "description": "Jawline contouring and definition using 2ml of dermal fillers to create a significantly sharper, more defined jawline. Enhances facial structure and creates a more sculpted, chiseled appearance."
         },
         "TEAR TROUGH": {
             "description": "Under-eye filler treatment to reduce dark circles, hollows, and fine lines. This delicate procedure restores volume to the tear trough area, creating a refreshed, well-rested appearance."
@@ -75,9 +84,6 @@ const treatmentsData = {
         "DISSOLVING FILLER": {
             "description": "Treatment to dissolve unwanted or misplaced dermal fillers using hyaluronidase. This procedure can correct asymmetry, overfilling, or complications, restoring natural facial contours."
         },
-        "BELOTERO NECK REJUVENATION/NECK LINES TREATMENT": {
-            "description": "Advanced Belotero treatment to soften visible neck lines and enhance skin elasticity. This treatment addresses horizontal neck lines (necklace lines) for a smoother, more youthful neck appearance."
-        }
     },
     "skin-boosters": {
         "SEVENTY HYAL SKIN BOOSTER": {
@@ -109,15 +115,20 @@ const treatmentsData = {
         },
         "JALUPRO": {
             "description": "Jalupro is an innovative skin rejuvenation treatment containing amino acids, peptides, and hyaluronic acid. This mesotherapy solution stimulates collagen and elastin production, improves skin texture and firmness, and provides deep hydration for a more youthful and revitalized appearance."
+        },
+        "BELOTERO NECK REJUVENATION/NECK LINES TREATMENT": {
+            "description": "Advanced Belotero treatment to soften visible neck lines and enhance skin elasticity. This treatment addresses horizontal neck lines (necklace lines) for a smoother, more youthful neck appearance."
         }
     },
     "advanced-treatments": {
-        "MICRONEEDLING WITH EXOSOMES": {
+        "MICRONEEDLING WITH EXOSOMES (FACE)": {
             "description": "Microneedling with exosomes is an advanced skin rejuvenation treatment that combines micro-injuries with exosome therapy. This powerful combination supports collagen production, improves skin texture, reduces fine lines and scars, and enhances overall skin vitality and radiance."
         },
-        "MICRONEEDLING WITH EXOSOMES FOR HAIR": {
+        "MICRONEEDLING WITH EXOSOMES (HAIR)": {
             "description": "Microneedling with exosomes for hair is a specialized treatment that combines microneedling with exosome therapy to stimulate hair growth, improve scalp health, and enhance hair density. This treatment promotes follicle regeneration and strengthens existing hair."
-        },
+        }
+    },
+    "skin-treatments": {
         "CHEMICAL PEELS": {
             "description": "Chemical peels use acid solutions to exfoliate and rejuvenate the skin. They improve skin texture, reduce fine lines, fade hyperpigmentation, and treat acne. Available in various strengths to suit different skin types and concerns."
         }
