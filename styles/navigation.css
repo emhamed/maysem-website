@@ -124,11 +124,11 @@
     }
     
     .nav-container {
-        padding: 10px 15px;
+        padding: 12px 15px;
         height: auto;
         min-height: auto;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
     
     .hamburger {
@@ -143,7 +143,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 6px;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -156,8 +156,8 @@
     }
     
     .nav-menu li a {
-        font-size: 0.7rem;
-        padding: 6px 10px;
+        font-size: 0.65rem;
+        padding: 5px 8px;
         display: block;
         white-space: nowrap;
     }
@@ -167,10 +167,10 @@
     }
     
     .btn-book {
-        padding: 6px 12px;
-        font-size: 0.65rem;
+        padding: 5px 10px;
+        font-size: 0.6rem;
         margin: 0;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }
     
     .social-icons {
