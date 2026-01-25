@@ -415,11 +415,29 @@ a {
 .inspiring-quote {
     text-align: center;
     font-size: 1.05rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     color: var(--text-color);
-    margin: 0 0 30px;
-    font-weight: 300;
+    margin: 20px 0 0;
+    font-weight: 600;
+    position: relative;
+}
+
+.inspiring-quote::before,
+.inspiring-quote::after {
+    content: '"';
+    font-size: 1.4rem;
+    line-height: 0;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.inspiring-quote::before {
+    margin-right: 6px;
+}
+
+.inspiring-quote::after {
+    margin-left: 6px;
 }
 
 .about-content {
