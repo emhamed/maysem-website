@@ -805,7 +805,7 @@ a {
     }
     
     .about-title-image {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         margin-top: 20px;
         padding: 0 15px;
         text-align: center;
@@ -815,17 +815,23 @@ a {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
+        display: block;
     }
     
     .about-profile {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 30px;
         margin-bottom: 30px;
+        padding: 0 15px;
     }
     
     .about-image {
         width: 100%;
         max-width: 100%;
+    }
+    
+    .profile-description {
+        padding: 0;
     }
     
     .profile-description p {

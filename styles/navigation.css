@@ -121,6 +121,7 @@
         top: 0;
         width: 100%;
         border-bottom: 1px solid var(--border-color);
+        background-color: var(--secondary-color);
     }
     
     .nav-container {
@@ -171,10 +172,11 @@
         font-size: 0.6rem;
         margin: 0;
         letter-spacing: 0.5px;
+        line-height: 1.2;
     }
     
     .social-icons {
-        gap: 12px;
+        gap: 10px;
         margin-left: 0;
         margin-top: 0;
         order: 2;
@@ -182,13 +184,50 @@
     }
     
     .social-icon {
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
     }
     
     .social-icon svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* iPhone specific fixes */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+    
+    .nav-menu {
+        gap: 5px;
+    }
+    
+    .nav-menu li a {
+        font-size: 0.6rem;
+        padding: 4px 7px;
+    }
+    
+    .btn-book {
+        font-size: 0.55rem;
+        padding: 4px 8px;
+    }
+    
+    .about-section {
+        padding: 160px 0 40px;
+    }
+    
+    .about-title-image {
+        margin-top: 30px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    
+    .about-profile {
+        gap: 25px;
+        padding: 0 10px;
     }
 }
 
