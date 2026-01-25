@@ -424,6 +424,11 @@ a {
     line-height: 1.6;
 }
 
+.inspiring-quote::before,
+.inspiring-quote::after {
+    content: none;
+}
+
 .about-content {
     display: flex;
     flex-direction: column;
